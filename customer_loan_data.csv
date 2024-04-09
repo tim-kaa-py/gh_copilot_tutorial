@@ -1,0 +1,11 @@
+CustomerID,Name,LoanAmount,LoanType,InterestRate,LoanDuration,InsuranceOptIn
+101,Alice,50000,Personal,0.05,5,False
+102,Bob,60000,Home,0.04,20,True
+103,Charlie,70000,Personal,0.07,5,False
+104,Diana,80000,Home,0.035,15,True
+105,Evan,90000,Auto,0.05,4,False
+106,Fiona,100000,Personal,0.06,6,True
+107,George,110000,Home,0.04,30,False
+108,Hannah,120000,Auto,0.045,3,True
+109,Ian,130000,Personal,0.065,7,False
+110,Jill,140000,Home,0.05,25,True
