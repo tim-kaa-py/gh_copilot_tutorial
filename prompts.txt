@@ -1,0 +1,7 @@
+Prompt 1)
+Suggest a complete standard Python project structure for a python code without any modules. The main file is called `process_loans.py`. The customer data is saved in a file `customer_loan_data.csv` in the folder data/input. The output is called `processed_loan_data.xlsx`.
+
+
+Prompt 2)
+
+
