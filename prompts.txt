@@ -2,6 +2,32 @@ Prompt 1)
 Suggest a complete standard Python project structure for a python code without any modules. The main file is called `process_loans.py`. The customer data is saved in a file `customer_loan_data.csv` in the folder data/input. The output is called `processed_loan_data.xlsx`.
 
 
-Prompt 2)
+Promt 2)
+*   Find out how to create a virtual python environment called: `gh_copilot`.
+*   and associate it with your project
+
+Promt 3)
+how do I install packages: pandas and openpyxl.
 
 
+
+
+Prompt 5 [Inline Chat])
+Create function `load_csv_data(filepath)` which loads CSV data into a DataFrame.
+
+
+
+Promt 6[Inline Chat])
+Create function `calculate_total_loan_cost(df)` wich add a `TotalLoanCost` column to the DataFrame. The dataframe contains the columns CustomerID,Name,LoanAmount,LoanType,InterestRate,LoanDuration,InsuranceOptIn. Calculate the total loan cost by adding up the loan and the yearly interests.
+
+
+
+Prompt 7)
+Create function `identify_insurance_targets(df, interest_rate_threshold, loan_duration_threshold)`: Adds an `InsuranceOffer` boolean column based on defined thresholds.
+
+
+Prompt 8)
+Create function `export_to_excel(df, filepath)`: Exports the DataFrame to an Excel file named `customer_insurance_offers.xlsx`.
+
+Prompt 9[with all code highlighted])
+how do I use all the function together in my main() function?

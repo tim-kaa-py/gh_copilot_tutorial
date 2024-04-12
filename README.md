@@ -28,12 +28,13 @@ Develop a Python program to automate data processing for banking and insurance s
 #### Step 2: Environment Setup
 
 *   Find out how to create a virtual python environment called: `gh_copilot`.
-*   and hssociate it with your project
+*   and associate it with your project
 *   and finally how to install necessary packages: which may be `pandas` and `openpyxl`.
 
 #### Step 3: Script Creation (`process_loans.py`)
 
-*   use the comment and auto complete feature of copilot to genereate the following functions
+*   use copilot to genereate the following functions
+*   Hint: Start with the inline chat and if you are not happy with the reuslts highligh te produced code and use the chat window to refine it
 
 *   **Function Definitions:**
     
@@ -45,17 +46,24 @@ Develop a Python program to automate data processing for banking and insurance s
         
     4.  `export_to_excel(df, filepath)`: Exports the DataFrame to an Excel file named `customer_insurance_offers.xlsx`.
         
-*   **Insurance Offer Criteria:** Interest rate > 5%, Loan duration > 10 years.
+*   **Insurance Offer Criteria:** Interest rate > 5%, Loan duration > 5 years.
 
 #### Step 4: Run the code
 
 *   If you get errors debug the code copying error messages to the chat window. If you know which code lines are the issue highlight them in the editor
 
-#### Optional Step 4: Testing
+#### Optional Step 5: Testing
 
-*  Use the Copilot feature `Generate Tests` to create a test for as many functions as you stil have time for
-*  If you need test data try to use the chat window to generate it
+*  Use the Copilot feature `Generate Tests` to create a test for `calculate_total_loan_cost(df)` and `identify_insurance_targets(df, interest_rate_threshold, loan_duration_threshold)`
++   If tests fail verify if the suggested results are corrcect!
 
-#### Step 5: GitHub and VSC Code
+#### Optional Step 6: Plotting
+
+*  Generate a plot for each person in the data showing how long from now it takes until their loan is paid back
+*  Figure out yourself which packages to use and how many and what functions you need (ofc using the chat window :-D)
+*  Save the plot as a PDF
+*  Go the extra mile in the formatting and try to make the plot look beautiful
+
+#### Step 7: GitHub and VSC Code
 
 *   Use VSC Code for version control and GitHub to commit and share the project.
