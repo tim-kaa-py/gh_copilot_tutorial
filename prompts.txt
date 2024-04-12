@@ -11,23 +11,22 @@ how do I install packages: pandas and openpyxl.
 
 
 
-
-Prompt 5 [Inline Chat])
+Prompt 4 [Inline Chat])
 Create function `load_csv_data(filepath)` which loads CSV data into a DataFrame.
 
 
 
-Promt 6[Inline Chat])
+Promt 5[Inline Chat])
 Create function `calculate_total_loan_cost(df)` wich add a `TotalLoanCost` column to the DataFrame. The dataframe contains the columns CustomerID,Name,LoanAmount,LoanType,InterestRate,LoanDuration,InsuranceOptIn. Calculate the total loan cost by adding up the loan and the yearly interests.
 
 
 
-Prompt 7)
+Prompt 6)
 Create function `identify_insurance_targets(df, interest_rate_threshold, loan_duration_threshold)`: Adds an `InsuranceOffer` boolean column based on defined thresholds.
 
 
-Prompt 8)
+Prompt 7)
 Create function `export_to_excel(df, filepath)`: Exports the DataFrame to an Excel file named `customer_insurance_offers.xlsx`.
 
-Prompt 9[with all code highlighted])
+Prompt 8[with all code highlighted])
 how do I use all the function together in my main() function?
