@@ -37,5 +37,10 @@ Prompt 10[with generated Test code highlighted])
 How do I run this test?
 
 
+Prompt 11)
+what is the problem?
 
+(gh_copilot) 3.10.4 $ /Users/timkuellmey/DI_local_dev/gh_copilot_tutorial/gh_copilot/bin/python /Users/timkuellmey/DI_loc al_dev/gh_copilot_tutorial/process_loans.py Traceback (most recent call last): File "/Users/timkuellmey/DI_local_dev/gh_copilot_tutorial/process_loans.py", line 68, in main() File "/Users/timkuellmey/DI_local_dev/gh_copilot_tutorial/process_loans.py", line 65, in main format_excel_header(output_filepath) File "/Users/timkuellmey/DI_local_dev/gh_copilot_tutorial/process_loans.py", line 33, in format_excel_header workbook = openpyxl.load_file(filepath) AttributeError: module 'openpyxl' has no attribute 'load_file'
 
+Prompt 12 [with function highlighted])
+This code highlights the second line instead of the header line, how can I change that?

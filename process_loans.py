@@ -5,11 +5,9 @@ def load_csv_data(filepath):
     df = pd.read_csv(filepath)
     return df
 
-
 def calculate_total_loan_cost(df):
     df['TotalLoanCost'] = df['LoanAmount'] + (df['LoanAmount'] * df['InterestRate'] * df['LoanDuration'])
     return df
-
 
 def identify_insurance_targets(df, interest_rate_threshold, loan_duration_threshold):
     # Create a new column for InsuranceOffer
@@ -23,27 +21,22 @@ def identify_insurance_targets(df, interest_rate_threshold, loan_duration_thresh
             df.at[index, 'InsuranceOffer'] = True
     return df
 
-
 def export_to_excel(df, filepath):
     df.to_excel(filepath, index=False)
 
-
 def format_excel_header(filepath):
     # Load the Excel file into an openpyxl workbook
-    workbook = openpyxl.load_file(filepath)
+    workbook = openpyxl.load_workbook(filepath)
     sheet = workbook.active
     
     # Apply yellow fill to the header row
     yellow_fill = openpyxl.styles.PatternFill(start_color="FFFF00", end_color="FFFF00", fill_type="solid")
     
-    for cell in sheet["2:2"]: 
+    for cell in sheet["1:1"]: 
         cell.fill = yellow_fill
     
     # Save the changes to the file
     workbook.save(filepath)
-
-
-
 
 def main():
     # Load the data
