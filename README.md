@@ -52,10 +52,12 @@ Develop a Python program to automate data processing for banking and insurance s
 
 *   If you get errors debug the code copying error messages to the chat window. If you know which code lines are the issue highlight them in the editor
 
+
 #### Optional Step 5: Testing
 
-*  Use the Copilot feature `Generate Tests` to create a test for `calculate_total_loan_cost(df)` and `identify_insurance_targets(df, interest_rate_threshold, loan_duration_threshold)`
-+   If tests fail verify if the suggested results are corrcect!
+*  Use the Copilot feature `Generate Tests` to create a test for `calculate_total_loan_cost(df)`
+*  If tests fail verify if the suggested results are corrcect!
+*  Check how you should run the created test file, using the chat window
 
 #### Optional Step 6: Plotting
 
