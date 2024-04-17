@@ -18,17 +18,16 @@ Promt 5[Inline Chat])
 Create function `calculate_total_loan_cost(df)` wich add a `TotalLoanCost` column to the DataFrame. The dataframe contains the columns CustomerID,Name,LoanAmount,LoanType,InterestRate,LoanDuration,InsuranceOptIn. Calculate the total loan cost by adding up the loan and the yearly interests.
 
 
-Prompt 6)
+Prompt 6 [Inline Chat])
 Create function `identify_insurance_targets(df, interest_rate_threshold, loan_duration_threshold)`: Adds an `InsuranceOffer` boolean column based on defined thresholds.
 
 
-Prompt 7)
+Prompt 7 [Inline Chat])
 Create function `export_to_excel(df, filepath)`: Exports the DataFrame to an Excel file named `customer_insurance_offers.xlsx`.
 
 
 Prompt 8[with all code highlighted])
 how do I use all the function together in my main() function?
-
 
 Action 9)
 right click on `calculate_total_loan_cost(df)` -> Copilot -> generate Tests
@@ -36,5 +35,7 @@ right click on `calculate_total_loan_cost(df)` -> Copilot -> generate Tests
 
 Prompt 10[with generated Test code highlighted])
 How do I run this test?
+
+
 
 

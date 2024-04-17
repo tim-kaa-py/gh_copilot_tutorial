@@ -30,13 +30,13 @@ def export_to_excel(df, filepath):
 
 def format_excel_header(filepath):
     # Load the Excel file into an openpyxl workbook
-    workbook = openpyxl.load_workbook(filepath)
+    workbook = openpyxl.load_file(filepath)
     sheet = workbook.active
     
     # Apply yellow fill to the header row
     yellow_fill = openpyxl.styles.PatternFill(start_color="FFFF00", end_color="FFFF00", fill_type="solid")
     
-    for cell in sheet["1:1"]:  # Accessing the first row completely
+    for cell in sheet["2:2"]: 
         cell.fill = yellow_fill
     
     # Save the changes to the file

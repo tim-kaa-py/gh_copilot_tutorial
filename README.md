@@ -61,16 +61,21 @@ Develop a Python program to automate data processing for banking and insurance s
 
 #### Optional Step 6: Debugging
 
+*  Finally, we want to highlight the header row of our Excel File in yellow.
+*  Copy the following function and call it in your main(). Then try to run it, you will encounter 2-3 issues.
+*  Copy the terminal errors to the Chat window with the function `format_excel_header` highlighted in the editor to debug the errors
+*  Hint: inspect the file to check if the code does what you expect
+
 ```python
 def format_excel_header(filepath):
     # Load the Excel file into an openpyxl workbook
-    workbook = openpyxl.load_workbook(filepath)
+    workbook = openpyxl.load_file(filepath)
     sheet = workbook.active
     
     # Apply yellow fill to the header row
     yellow_fill = openpyxl.styles.PatternFill(start_color="FFFF00", end_color="FFFF00", fill_type="solid")
     
-    for cell in sheet["1:1"]:  # Accessing the first row completely
+    for cell in sheet["2:2"]:
         cell.fill = yellow_fill
     
     # Save the changes to the file
