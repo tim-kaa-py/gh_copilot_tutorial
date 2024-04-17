@@ -59,12 +59,23 @@ Develop a Python program to automate data processing for banking and insurance s
 *  If tests fail verify if the suggested results are corrcect!
 *  Check how you should run the created test file, using the chat window
 
-#### Optional Step 6: Plotting
+#### Optional Step 6: Debugging
 
-*  Generate a plot for each person in the data showing how long from now it takes until their loan is paid back
-*  Figure out yourself which packages to use and how many and what functions you need (ofc using the chat window :-D)
-*  Save the plot as a PDF
-*  Go the extra mile in the formatting and try to make the plot look beautiful
+```python
+def format_excel_header(filepath):
+    # Load the Excel file into an openpyxl workbook
+    workbook = openpyxl.load_workbook(filepath)
+    sheet = workbook.active
+    
+    # Apply yellow fill to the header row
+    yellow_fill = openpyxl.styles.PatternFill(start_color="FFFF00", end_color="FFFF00", fill_type="solid")
+    
+    for cell in sheet["1:1"]:  # Accessing the first row completely
+        cell.fill = yellow_fill
+    
+    # Save the changes to the file
+    workbook.save(filepath)
+```
 
 #### Step 7: GitHub and VSC Code
 
