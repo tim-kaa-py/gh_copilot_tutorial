@@ -6,8 +6,9 @@ Promt 2)
 *   Find out how to create a virtual python environment called: `gh_copilot`.
 *   and associate it with your project
 
+
 Promt 3)
-how do I install packages: pandas and openpyxl.
+how do I install packages: pandas and openpyxl?
 
 
 Prompt 4 [Inline Chat])
@@ -29,6 +30,7 @@ Create function `export_to_excel(df, filepath)`: Exports the DataFrame to an Exc
 Prompt 8[with all code highlighted])
 how do I use all the function together in my main() function?
 
+
 Action 9)
 right click on `calculate_total_loan_cost(df)` -> Copilot -> generate Tests
 
@@ -38,9 +40,17 @@ How do I run this test?
 
 
 Prompt 11)
-what is the problem?
-
+what is the problem indicated by the following error?
 (gh_copilot) 3.10.4 $ /Users/timkuellmey/DI_local_dev/gh_copilot_tutorial/gh_copilot/bin/python /Users/timkuellmey/DI_loc al_dev/gh_copilot_tutorial/process_loans.py Traceback (most recent call last): File "/Users/timkuellmey/DI_local_dev/gh_copilot_tutorial/process_loans.py", line 68, in main() File "/Users/timkuellmey/DI_local_dev/gh_copilot_tutorial/process_loans.py", line 65, in main format_excel_header(output_filepath) File "/Users/timkuellmey/DI_local_dev/gh_copilot_tutorial/process_loans.py", line 33, in format_excel_header workbook = openpyxl.load_file(filepath) AttributeError: module 'openpyxl' has no attribute 'load_file'
+
 
 Prompt 12 [with function highlighted])
 This code highlights the second line instead of the header line, how can I change that?
+
+
+Prompt 13)[with all `process_loans.py` code highligted]
+Reformat and comment the code like a professional python dveloper would.
+
+
+Prompt 14)[with all `test_process_loans.py` code highligted]
+Reformat and comment the code like a professional python dveloper would.

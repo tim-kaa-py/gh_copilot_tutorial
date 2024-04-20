@@ -1,23 +1,26 @@
 import pandas as pd
 import pytest
-
 from process_loans import calculate_total_loan_cost
 
 def test_calculate_total_loan_cost():
-    # Create a sample DataFrame
+    """
+    Test the function calculate_total_loan_cost to ensure it correctly calculates the total loan cost and adds it as a new column.
+    """
+    # Create a sample DataFrame with loan details
     df = pd.DataFrame({
         'LoanAmount': [1000, 2000, 3000],
         'InterestRate': [0.05, 0.1, 0.15],
         'LoanDuration': [12, 24, 36]
     })
 
-    # Calculate the total loan cost
+    # Use the function to calculate the total loan cost and add it to the DataFrame
     df_with_total_cost = calculate_total_loan_cost(df)
 
-    # Check if the 'TotalLoanCost' column is added correctly
-    assert 'TotalLoanCost' in df_with_total_cost.columns
+    # Assert that the 'TotalLoanCost' column has been added to the DataFrame
+    assert 'TotalLoanCost' in df_with_total_cost.columns, "TotalLoanCost column not found in the DataFrame."
 
-    # Check the calculated total loan cost values
-    assert df_with_total_cost['TotalLoanCost'].tolist() == [1600, 6800, 19200]
+    # Assert that the calculated total loan cost values are correct
+    expected_values = [1600, 6800, 19200]
+    assert df_with_total_cost['TotalLoanCost'].tolist() == expected_values, f"Expected values were {expected_values}, but got {df_with_total_cost['TotalLoanCost'].tolist()} instead."
 
-# Run the test using pytest
+# This test can be run using pytest by executing the command `pytest test_process_loans.py` in the terminal.

@@ -1,10 +1,14 @@
 Python Data Processing Project: Banking and Insurance Scenario
 ==============================================================
 
+
+Python Data Processing Project: Banking and Insurance Scenario
+==============================================================
+
 Objective
 ---------
 
-Develop a Python program to automate data processing for banking and insurance scenarios, demonstrating AI's ability to assist in coding by extracting and transforming data from a CSV file, identifying potential targets for insurance offers based on loan data, and exporting the results to an Excel file.
+Develop a Python program to automate data processing for banking and insurance scenarios, demonstrating AI's ability to assist in coding by extracting and transforming data from a CSV file, identifying potential targets for insurance offers based on loan data, and exporting the results to an Excel file. **Insurance Offer Criteria:** Interest rate > 5%, Loan duration > 5 years.
 
 ### Project Outline
 
@@ -14,7 +18,7 @@ Develop a Python program to automate data processing for banking and insurance s
 2.  **Program Objective:**
     
     *   Read the CSV, analyze loan data to identify insurance offer targets, and export results to an Excel file.
-
+    *   Tag for insurance offer if **Insurance Offer Criteria:** Interest rate > 5%, Loan duration > 5 years are met.
 ### Detailed Instructions
 
 #### Step 1: Initialize Project Structure
@@ -82,6 +86,10 @@ def format_excel_header(filepath):
     workbook.save(filepath)
 ```
 
-#### Step 7: GitHub and VSC Code
+#### Step 7: Final
+*   Highlight all code in each source file (main sript and testing script, if you generated it) you generated and ask Copilot to reformat and comment the code in a professional manner.
+*   Hint: in our example we can do it for the complete code, in more complex projects you may have to do it in multiple steps because the context window (the length of the text that can be processed at once) is limited.
+
+#### Step 8: GitHub and VSC Code
 
 *   Use VSC Code for version control and GitHub to commit and share the project.
