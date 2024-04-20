@@ -86,9 +86,10 @@ def format_excel_header(filepath):
     workbook.save(filepath)
 ```
 
-#### Step 7: Final
+#### Step 7: Final Steps
 *   Highlight all code in each source file (main sript and testing script, if you generated it) you generated and ask Copilot to reformat and comment the code in a professional manner.
 *   Hint: in our example we can do it for the complete code, in more complex projects you may have to do it in multiple steps because the context window (the length of the text that can be processed at once) is limited.
+*   If you haven't already genereate a `requirements.txt` file listing the python packages you used.
 
 #### Step 8: GitHub and VSC Code
 

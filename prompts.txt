@@ -54,3 +54,6 @@ Reformat and comment the code like a professional python dveloper would.
 
 Prompt 14)[with all `test_process_loans.py` code highligted]
 Reformat and comment the code like a professional python dveloper would.
+
+Prompt 15)
+Generate a requirements.txt listing all the used python packages.
