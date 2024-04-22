@@ -31,7 +31,7 @@ Develop a Python program to automate data processing for a bank by extracting an
 *   **Create a new branch**  with a creative name representing your group
 *   **Activate GitHub Copilot** by signing in to your GitHub account within VSC Code
 *   **Open the GitHub Copilot's chat function** and request  a complete standard Python project structure for a python code without any modules. The main file is called `process_loans.py`. The customer data is saved in a file `customer_loan_data.csv` in the folder data/input. The output is called `processed_loan_data.xlsx`.
-+   **Generate suggested folders and files**, if you need help address your questions to the chat window 
+*   **Generate suggested folders and files**, if you need help address your questions to the chat window 
 
 #### Step 2: Environment Setup
 
@@ -50,7 +50,7 @@ Develop a Python program to automate data processing for a bank by extracting an
         
     2.  `calculate_total_loan_cost(df)`: Adds a `TotalLoanCost` column to the DataFrame
         
-    3.  `identify_insurance_targets(df, interest_rate_threshold, loan_duration_threshold)`: Adds an `InsuranceOffer` boolean column based on defined thresholds, should be true if: `InterestRate` > `interest_rate_threshold`and `LoanDuration` > `loan_duration_threshold5 years` (**Insurance Offer Criteria**)
+    3.  `identify_insurance_targets(df, interest_rate_threshold, loan_duration_threshold)`: Adds an `InsuranceOffer` boolean column based on defined thresholds, should be true if: `InterestRate` > `interest_rate_threshold`and `LoanDuration` > `loan_duration_threshold` > 5 years (**Insurance Offer Criteria**)
         
     4.  `export_to_excel(df, filepath)`: Exports the DataFrame to an Excel file named `customer_insurance_offers.xlsx`
 
