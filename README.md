@@ -1,7 +1,7 @@
 GitHub Copilot Hands-On Tutorial
 ==============================================================
 
-*   **Objective**: Learn to use GitHub Copilot in your projects with a simple Python example. You will write it regardless of whether you have experience with Python or not. Address all your questions to GitHub Copilot. Try to rely solely on the windows of your Integrated Development Environment (IDE).
+*   **Objective**: Learn to use GitHub Copilot in your projects with a simple Python example. You will write it regardless of whether you have experience with Python or not. **Address all your questions to GitHub Copilot.** Try to rely solely on the windows of your Integrated Development Environment (IDE).
 
 *   **Prequisites**:
     * IDE with GitHub Copilot (recommended: `Mircosoft VSC Code`)
